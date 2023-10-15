@@ -12,8 +12,8 @@ function game() {
     }
     if (playerWins > computerWins) {
         console.log("You win the match!");
-    } else if (playerWins === computerWins {
-        console.log("You tie the match!")
+    } else if (playerWins === computerWins) {
+        console.log("You tie the match!");
     } else {
         console.log("You lose the match!");
     }
