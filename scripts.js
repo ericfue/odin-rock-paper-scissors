@@ -3,19 +3,20 @@ let computerWins = 0;
 
 game();
 
+if (playerWins > computerWins) {
+    console.log("You win the match!");
+} else if (playerWins === computerWins) {
+    console.log("You tie the match!");
+} else {
+    console.log("You lose the match!");
+}
+
 function game() {
     for (let i = 0; i < 5; i++) {
         playRound(getPlayerChoice(), getComputerChoice());
         console.log("Round " + (i + 1) + " complete.");
         console.log("Player Score: " + playerWins)
         console.log("Computer Score: " + computerWins);
-    }
-    if (playerWins > computerWins) {
-        console.log("You win the match!");
-    } else if (playerWins === computerWins) {
-        console.log("You tie the match!");
-    } else {
-        console.log("You lose the match!");
     }
 }
 
